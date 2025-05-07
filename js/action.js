@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
 
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', './php/exemplophp.php', true);
+        xhr.open('GET', './php/exemplophp.php', true); //Depois ver a difrença entre chamar o método GET e POST na requisição assíncrona 
         xhr.onload = function () {
             if (xhr.status === 200) {
                 alert('Dados recebidos: ' + xhr.responseText);
