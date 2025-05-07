@@ -4,37 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="./js/action.js" defer></script>
+    <title>Primeiro código com Ajax</title>
 </head>
 
 <body>
     <h1>Primeira requisição ajax</h1>
     <button id="carregar">carregar dados</button>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
 
-            const button = document.getElementById('carregar');
-
-            button.addEventListener('click', function () {
-
-                const xhr = new XMLHttpRequest();
-                xhr.open('GET', 'exemplophp.php', true);
-                xhr.onload = function () {
-                    if (xhr.status === 200) {
-                        alert('Dados recebidos: ' + xhr.responseText);
-                    } else {
-                        alert('Erro na requisição: ' + xhr.status);
-                    }
-                };
-                xhr.onerror = function () {
-                    alert('Ocorreu um erro na requisição');
-                };
-
-                xhr.send();
-            });
-
-        });
-    </script>
 </body>
 
 </html>
