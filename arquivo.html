@@ -8,10 +8,12 @@
 </head>
 
 <script>
-    
+
     document.addEventListener('DOMContentLoaded', function () {
 
         const button = document.getElementById('carregar');
+        const n1 = document.getElementById('num1');
+        const n2 = document.getElementById('num2');
 
         button.addEventListener('click', function () {
 
@@ -37,8 +39,14 @@
 
 <body>
     <h1>Primeira requisição ajax</h1>
-    <button id="carregar">carregar dados</button>
 
+    
+
+    <label>N1</label><br><br>
+    <input type="number" id="num1"><br><br>
+    <label>N2</label><Br><br>
+    <input type="number" id="num2"><br><br>
+    <button id="carregar">carregar dados</button>
 </body>
 
 </html>
